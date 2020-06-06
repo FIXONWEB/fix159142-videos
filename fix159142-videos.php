@@ -7,7 +7,7 @@
  * Author URI:      https://fixonweb.com.br
  * Text Domain:     fix159142
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Fix159142
  */
@@ -173,3 +173,5 @@ class Fix159134SettingsPage {
     public function fix159142S_playlist_id_callback() {printf('<input type="text" id="fix159142S_playlist_id" name="fix159142S_option[fix159142S_playlist_id]" value="%s" />', isset( $this->options['fix159142S_playlist_id'] ) ? esc_attr( $this->options['fix159142S_playlist_id']) : '' );}
 }
 if( is_admin() ) $Fix159134_settings_page = new Fix159134SettingsPage();
+
+include "post-types/playlist.php";
